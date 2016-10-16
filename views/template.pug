@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  style.
+    table, th, td {
+      border: 1px solid black;
+    }
+  head
+    meta(charset='UTF-8')
+    title IP Addresses
+  body
+    if ips.length == 0
+      h1 No recent IP addresses received
+    else
+      h1 The last received IP Addresses are:
+      table
+        tr
+          th Time Ping Received
+          th IP
+          th Message
+        each iptime in ips.slice(0).reverse()
+          tr
+            td= iptime.time
+            td= iptime.ip
+            td= iptime.data

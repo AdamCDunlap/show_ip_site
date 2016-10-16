@@ -1,0 +1,21 @@
+{
+  "name": "show_ip_site",
+  "version": "1.0.0",
+  "description": "Site that shows IP addresses and messages of computers that PUT it",
+  "main": "show_ip_site.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ip",
+    "site",
+    "web"
+  ],
+  "author": "Adam Dunlap",
+  "license": "ISC"
+}
