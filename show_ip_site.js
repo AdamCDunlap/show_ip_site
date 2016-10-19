@@ -1,6 +1,6 @@
 var app = require('express')();
 
-// curl -d 'message you want to send' http://134.173.208.126:3142
+// curl -d 'message you want to send' IP_ADDRESS:3142
 
 app.set('view engine', 'pug');
 app.enable('trust proxy');
