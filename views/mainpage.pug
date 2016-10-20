@@ -1,14 +1,11 @@
 doctype html
 html(lang='en')
-  style.
-    table, th, td {
-      border: 1px solid black;
-    }
+  link(href="mainstyle.css" rel="stylesheet")
   head
     meta(charset='UTF-8')
     title IP Addresses
   body
-    if ips.length == 0
+    if msgs.length == 0
       h1 No recent IP addresses received
     else
       h1 The last received IP Addresses are:
@@ -17,7 +14,7 @@ html(lang='en')
           th Time Ping Received
           th IP
           th Message
-        each iptime in ips.slice(0).reverse()
+        each iptime in msgs.slice(0).reverse()
           tr
             td= iptime.time
             td= iptime.ip
